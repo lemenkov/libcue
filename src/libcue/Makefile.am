@@ -27,5 +27,5 @@ libcueinclude_HEADERS	= 				\
 
 lib_LTLIBRARIES		= libcue.la
 
-libcue_la_LDFLAGS	= -version-info @LIBCUE_LIBTOOL_VERSION@
+libcue_la_LDFLAGS	= -version-info @LIBCUE_LIBTOOL_VERSION@ -export-symbols-regex '^([^y]|y[^y])'
 libcueincludedir	= $(includedir)/@LIBCUE_LIBRARY_NAME@-@LIBCUE_API_VERSION@/@LIBCUE_LIBRARY_NAME@
